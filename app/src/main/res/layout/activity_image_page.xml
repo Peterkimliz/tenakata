@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImagePageActivity">
+
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/profile" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingButton"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end|bottom"
+            app:fabCustomSize="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/camera"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+
+    <EditText
+        android:id="@+id/iqResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/inputs"
+        android:elevation="2dp"
+        android:hint="Enter your IQ result"
+        android:inputType="number"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iqResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:text="Finish"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        />
+
+</RelativeLayout>
